@@ -20,23 +20,36 @@
 //     console.log(result);
 // }
 
-// add(high);
+// // add(high);
 
 
-function add( a,b,rn)
-{
-     let sum= a+b;
-     rn(sum);
-}
-
-// function high(sum)
+// function add( a,b,rn)
 // {
-//   console.log(sum);
+//      let sum= a+b;
+//      rn(sum);
 // }
 
-add(10,9,(high)=>console.log(high));
+// // function high(sum)
+// // {
+// //   console.log(sum);
+// // }
+
+// add(10,9,(high)=>console.log(high));
 
 
 // add(2,3,function(say){
 //     console.log(say);
 // })
+
+
+function anil (x,y,chai){
+    let  a= (x*y)+100;
+     chai(a);
+
+}
+
+function next(a){
+     console.log(a);
+}
+
+anil(1,2,next);
