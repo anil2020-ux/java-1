@@ -5,4 +5,4 @@ now exploring -- javascript and python.
 and more to go.
 
 wanna connect with me ?
-1.redit - @Dachnanil
+-- reddit; @Dachanil
