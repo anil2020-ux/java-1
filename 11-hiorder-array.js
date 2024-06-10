@@ -17,7 +17,8 @@
 
 // let students =[1,9,7,2];
 
-// function vall  ( n ){
+// function vall  ( n )
+{
 //     n=n*3
 //     return n ;
 // }

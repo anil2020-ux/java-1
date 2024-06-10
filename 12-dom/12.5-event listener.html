@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .background-color{
+        background-color: black;
+        color: white;
+        
+    }
+</style>
+</head>
+<body class="background-color">
+    <nav class="starting">
+        <h2 onclick="alert('dont click me ')"> this website is under construction !</h2>
+    </nav>
+    <div id="first">
+        <h1 class="first">
+            Lorem ipsum dolor sit amet.
+        </h1>
+    </div>
+
+    <nav class="second">
+         <h2 class="second">
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
+         </h2>
+         <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cumque.</p>
+    </nav>
+
+<!-------------------------------------------------------------------first way
+ <div  class="input_field">
+    enter the name :<input type="text" >
+ </div>
+ <button onclick="console.log('hacked')">click me. </button> -->
+
+
+ <!-------------------------------------------------------------------second way 
+ <div  class="input_field">
+    enter the name :<input type="text" >
+ </div>
+ <button onclick="clicked()">click me. </button>
+<script>
+    function clicked ()
+    {
+        console.log("hey I am clicked ");
+        alert("hey there I am alert ! ")
+    }
+</script>
+-->
+
+<!----------------------------------------------------------------------third way
+<div  class="input_field">
+    enter the name :<input type="text" >
+ </div>
+ <button id="clickButton">click me. </button>
+<script>
+   let event = document.getElementById('clickButton')
+   event.onclick = function() =
+   {
+     console.log(" this is the  3rd way of event listening");
+     alert("message : this is the  3rd way of event listening")
+   }
+     or ------ using arrow function
+     event.onclick = ()=>
+     {
+       console.log(" this is the  3rd way of event listening");
+       alert("message : this is the  3rd way of event listening")
+     }
+</script>
+-->
+ <!--------------------------------------------------------------------4th -best way -->
+ <!-- <div  class="input_field">
+    enter the name :<input type="number" >
+ </div>
+
+ <button id="clickButton">change colour. </button>
+<script>
+   let event = document.getElementById('clickButton')
+   event.addEventListener('click',function()
+{
+    let change = document.querySelector(".first")
+    let first= change.style.color="red"
+    console.log(first);
+})
+
+</script> -->
+<!------------------------------------------------------------------->
+
+ <!-- <button id="clickButton">change colour. </button>
+
+
+<script>
+   let event = document.getElementById('clickButton');
+   let change = document.getElementById('first');
+  
+   
+   event.addEventListener("click",()=>
+{
+    if (change.style.color === "red")
+    {
+        change.style.color="blue";
+    }
+    else{
+        change.style.color ='red';
+    }
+    
+});
+</script>  -->
+<!---------------------------------------------------------------------->
+
+<script>
+    let check = document.querySelector("body").children
+    for (let i=0 ; i<check.length ; i++)
+    {
+        check.item(i).addEventListener("click",function()
+    {
+        check.item(i).remove();
+    })
+    }
+</script>
+
+</body>
+</html>

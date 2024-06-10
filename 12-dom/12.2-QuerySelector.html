@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulate</title>
+</head>
+<body>
+    <nav class="starting">
+        <h2> this website is under construction !</h2>
+    </nav>
+   <div class="body">
+            <h4> div : Developed by <span id="user_name"> Anil </span></h4>
+        <p> div : Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ipsa minus eos saepe magnam corporis distinctio veritatis illum facere doloremque, 
+            iusto dolor perferendis ut vitae iste nobis repellat corrupti reprehenderit rem!</p>
+            <p class="code"> div : Here is the code :</p>
+   </div>
+   <code>
+             code : console.log("this is console");
+   </code>
+   <div id="second"> <h1>  div: this is 2-div for testing purpose.</h1></div>
+
+   <script>
+//----------------------------------------------------------query selector types
+    /*
+            selectors :->>> take frist element
+            1. Name tag
+            2. class .
+            3. id #
+    */
+
+//--------------------------------------------------------------use of tagName: InnerHTML
+//-> used to access the tag name and change innerHTML
+/*
+   let check = document.querySelector('body')
+   check.innerHTML = "<h1> This is hacked !</h1>"
+*/
+//------------------------------------------------------------ use of " # " : id
+/*
+
+let check = document.querySelector('#user_name');
+check.innerText="David"
+console.log(check); 
+
+*/
+//------------------------------------------------------------ use of "." : class
+
+let check = document.querySelectorAll("div");
+check.forEach((e)=> 
+    console.log(e.innerText));
+
+
+   </script>
+    
+</body>
+</html>

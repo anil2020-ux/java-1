@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background-color{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="background-color">
+    <div>
+        <h1> this is testing page. <p> and this is 1st div container.
+        </p></h1>
+    </div>
+    <nav>
+        <h3> this is nav portion.</h3>
+    </nav>
+    <div>
+        <h4>Developed with ❤ by <span id="user"></span> Anil Acharya <p> this is 2-div portion </p> </h4>
+    </div>
+    <button id="clickButton">click me. </button>
+ 
+<script>
+
+     async function momo()
+     {
+        let haha =  await fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
+    console.log(haha);
+    }
+     momo()
+
+</script>
+
+</body>
+
+</html>

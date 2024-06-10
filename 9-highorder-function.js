@@ -53,3 +53,18 @@ function next(a){
 }
 
 anil(1,2,next);
+
+function babe(q,w,cb)
+{
+     let rs=q*w;
+     nopeee(rs)
+}
+
+function rs()
+{
+ console.log("this is the value of callback fcuntion.");
+}
+
+
+
+babe(2,3,nopeee)

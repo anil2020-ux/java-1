@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create element </title>
+</head>
+    <style>
+        .background-color{
+            background-color: black;
+            color: white;
+            }
+    </style>
+</head>
+    <body class="background-color">
+        <nav class="starting">
+            <h2 onclick="alert('dont click me ')"> this website is under construction !</h2>
+        </nav>
+        <div id="first">
+            
+        </div>
+    
+        <nav class="second">
+             <h2 class="second">
+                Lorem, ipsum dolor sit amet consectetur adipisicing.
+             </h2>
+             <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cumque.</p>
+        </nav>
+    <input type="text" placeholder="enter address">
+        <button id="hey-button">click me </button>
+ 
+<!------------------------------------------------------------ will just only add one element-->
+
+<!-- 
+
+<script >
+                let say = document.getElementById('hey-button')
+                let next = document.getElementById('first')
+
+                say.addEventListener('click', ()=>{
+                //  next.innerHTML='<H1>I am added </H1> '
+                let neww = document.createElement('h2');
+                neww.innerText= " this element has been added successfully ! "
+                next.appendChild(neww);
+</script>
+
+    }) 
+
+-->
+     
+<!----------------------------------------------------------------------------ANOTHER WAY -->
+
+<!--
+
+<script>
+            let say = document.getElementById('hey-button')
+            let next = document.getElementById('first')
+            say.addEventListener('click',()=>{
+                // next.innerHTML="this has been added ! " ------------------- use to add only one item.
+             let momo = document.createElement('h2')
+             momo.innerText = " momo and chatni"
+             next.appendChild(momo)
+ 
+    })
+</script>
+
+ -->
+
+ <!-----------------------------------------------------------------------------counting up-->\
+<!--
+<script>
+
+    let say = document.getElementById('hey-button')
+            let next = document.getElementById('first')
+            
+            let juice = 0;
+            say.addEventListener('click',()=>{
+                let op = document.createElement('h3')
+                op.innerText= juice
+                next.appendChild(op);
+                juice++
+            })
+
+
+        
+</SCript>
+
+-->
+
+       
+ 
+
+    </body>
+</html>

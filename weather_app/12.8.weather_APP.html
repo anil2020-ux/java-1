@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background-color{
+            background-color: black;
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body class="background-color">
+    <p> You can find the weather of any city here. </p>
+    <div id="name">
+        <input type="text" id="place" placeholder="enter city name :" >
+        <button id="submit"> check </button>
+    </div>
+    <div id="here">
+        <h1 id="country"></h1>
+        <h3 id="temperature"></h3>
+        <h5 id="time"></h5>
+
+    </div>
+<script >
+
+let push = document.getElementById("submit")
+let value1 = document.getElementById("place")
+let val1 = document.getElementById("country")
+let val2 = document.getElementById("temperature")
+let val3 = document.getElementById("time")
+
+
+
+async function getdata(city){
+ let lol = await fetch(`http://api.weatherapi.com/v1/current.json?key= ed87bfce7d194270aab32809241006&q=${city}&aqi=yes`)
+ 
+ return await lol.json()
+}
+
+push.addEventListener("click", async()=>{
+    let take = value1.value
+     let wait = await getdata(take);
+     console.log(wait);
+    val1.innerText =   `${wait.location.country}`
+    val2.innerText =  `${wait.current.temp_c}`
+    val3.innerText = `${wait.location.localtime}`;
+
+    //  let xx = document.createElement("h2")
+    // xx.innerText = await wait;
+    // hehe.appendChild(xx);
+  
+})
+
+ 
+
+
+
+</script>
+
+</body>
+
+</html>
